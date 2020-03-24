@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNio.build/master.swiftdeps"
+  },
+  "/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/Sources/CcurlNio/main.swift": {
+    "dependencies": "/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNio.build/main.d",
+    "object": "/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNio.build/main.swift.o",
+    "swiftmodule": "/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNio.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNio.build/main.swiftdeps"
+  }
+}

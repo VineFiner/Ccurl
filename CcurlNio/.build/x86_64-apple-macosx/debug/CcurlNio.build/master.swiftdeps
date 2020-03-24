@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+options: "103c97982edda0a1e0a386f91a1e36c0"
+build_time: [1585030636, 160601000]
+inputs:
+  "/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/Sources/CcurlNio/main.swift": [1585030495, 816388694]

@@ -1,0 +1,78 @@
+client:
+  name: basic
+tools: {}
+targets:
+  "main": ["/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNio","/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNio.swiftmodule","<CcurlNio-debug.exe>","<CcurlNio-debug.module>"]
+  "test": ["/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNio","/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNio.swiftmodule","/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNioPackageTests.xctest/Contents/MacOS/CcurlNioPackageTests","/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNioTests.swiftmodule","<CcurlNio-debug.exe>","<CcurlNio-debug.module>","<CcurlNioPackageTests-debug.test>","<CcurlNioTests-debug.module>"]
+  "CcurlNio-debug.exe": ["/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNio","<CcurlNio-debug.exe>"]
+  "CcurlNio-debug.module": ["/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNio.swiftmodule","<CcurlNio-debug.module>"]
+  "CcurlNioPackageTests-debug.test": ["/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNioPackageTests.xctest/Contents/MacOS/CcurlNioPackageTests","<CcurlNioPackageTests-debug.test>"]
+  "CcurlNioTests-debug.module": ["/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNioTests.swiftmodule","<CcurlNioTests-debug.module>"]
+default: "main"
+commands: 
+  "<C.CcurlNio-debug.exe>":
+    tool: phony
+    inputs: ["/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNio"]
+    outputs: ["<CcurlNio-debug.exe>"]
+
+  "<C.CcurlNio-debug.module>":
+    tool: phony
+    inputs: ["/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNio.swiftmodule"]
+    outputs: ["<CcurlNio-debug.module>"]
+
+  "<C.CcurlNioPackageTests-debug.test>":
+    tool: phony
+    inputs: ["/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNioPackageTests.xctest/Contents/MacOS/CcurlNioPackageTests"]
+    outputs: ["<CcurlNioPackageTests-debug.test>"]
+
+  "<C.CcurlNioTests-debug.module>":
+    tool: phony
+    inputs: ["/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNioTests.swiftmodule"]
+    outputs: ["<CcurlNioTests-debug.module>"]
+
+  "C.CcurlNio-debug.exe":
+    tool: shell
+    description: "Linking ./.build/x86_64-apple-macosx/debug/CcurlNio"
+    inputs: ["/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNio.build/main.swift.o"]
+    outputs: ["/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNio"]
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-g","-L","/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug","-o","/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNio","-module-name","CcurlNio","-emit-executable","@/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNio.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx","-target","x86_64-apple-macosx10.10","-L","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib"]
+
+  "C.CcurlNio-debug.module":
+    tool: swift-compiler
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "CcurlNio"
+    module-output-path: "/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNio.swiftmodule"
+    inputs: ["/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/Sources/CcurlNio/main.swift"]
+    outputs: ["/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNio.build/main.swift.o","/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNio.swiftmodule"]
+    import-paths: ["/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNio.build"
+    objects: ["/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNio.build/main.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.10","-swift-version","5","-enable-batch-mode","-index-store-path","/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Onone","-g","-enable-testing","-j4","-DSWIFT_PACKAGE","-DDEBUG","-Xcc","-fmodule-map-file=/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/Sources/Ccurl/module.modulemap","-module-cache-path","/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-color-diagnostics"]
+    sources: ["/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/Sources/CcurlNio/main.swift"]
+    is-library: false
+    enable-whole-module-optimization: false
+    num-threads: "4"
+
+  "C.CcurlNioPackageTests-debug.test":
+    tool: shell
+    description: "Linking ./.build/x86_64-apple-macosx/debug/CcurlNioPackageTests.xctest/Contents/MacOS/CcurlNioPackageTests"
+    inputs: ["/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNioTests.build/CcurlNioTests.swift.o","/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNioTests.build/XCTestManifests.swift.o"]
+    outputs: ["/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNioPackageTests.xctest/Contents/MacOS/CcurlNioPackageTests"]
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-g","-L","/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug","-o","/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNioPackageTests.xctest/Contents/MacOS/CcurlNioPackageTests","-module-name","CcurlNioPackageTests","-Xlinker","-bundle","@/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNioPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx","-target","x86_64-apple-macosx10.10","-L","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib"]
+
+  "C.CcurlNioTests-debug.module":
+    tool: swift-compiler
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "CcurlNioTests"
+    module-output-path: "/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNioTests.swiftmodule"
+    inputs: ["/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNio","/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/Tests/CcurlNioTests/CcurlNioTests.swift","/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/Tests/CcurlNioTests/XCTestManifests.swift"]
+    outputs: ["/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNioTests.build/CcurlNioTests.swift.o","/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNioTests.build/XCTestManifests.swift.o","/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNioTests.swiftmodule"]
+    import-paths: ["/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNioTests.build"
+    objects: ["/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNioTests.build/CcurlNioTests.swift.o","/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/CcurlNioTests.build/XCTestManifests.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.10","-swift-version","5","-enable-batch-mode","-index-store-path","/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Onone","-g","-enable-testing","-j4","-DSWIFT_PACKAGE","-DDEBUG","-Xcc","-fmodule-map-file=/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/Sources/Ccurl/module.modulemap","-module-cache-path","/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-color-diagnostics"]
+    sources: ["/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/Tests/CcurlNioTests/CcurlNioTests.swift","/Volumes/Additional/Developer/SwiftPackage/Ccurl/CcurlNio/Tests/CcurlNioTests/XCTestManifests.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "4"
+
